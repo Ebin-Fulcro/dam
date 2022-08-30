@@ -1,0 +1,217 @@
+$primaryFont: 'Roboto', sans-serif;
+$secondayFont: 'Inter', sans-serif;
+$condensedFont: 'Roboto Condensed', sans-serif;
+$primaryColor: #00ADEE;
+$secondaryColor: #FFC10E;
+$headerColor: #666666;
+
+header{
+    font-family: $condensedFont;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+
+    .top_header{
+        background: #f6f6f6;
+        padding: 10px 0;
+        font-weight: 300;
+
+        .call_mail{
+            a{
+                color: $headerColor;
+                img{
+                    width: 15px;
+                    margin-right: 10px;
+                }
+
+                &:hover{
+                    color: $primaryColor;
+                }
+            }
+            span{
+                display: inline-block;
+                color: #ECECEC;
+                margin: 0 10px;
+            }
+        }
+
+        .top_header_links{
+            span{
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .main_header{
+        position: relative;
+
+        .logo{
+            width: 20%;
+
+            a{
+                img{
+                    width: 180px;
+                }
+            }
+        }
+
+        .navigation{
+            width: 65%;
+
+            nav{
+                ul{
+                    li{
+                        display: inline-block;
+                        margin-left: 20px;
+                        min-height: 90px;
+
+                        .dropdown_nav{
+                            opacity: 0;
+                            visibility: hidden;
+                            position: absolute;
+                            text-align: left;
+                            width: 100%;
+                            left: 0;
+                            right: 0;
+                            background: #fafafa;
+                            top: 100%;
+                            z-index: 9999;
+                            padding: 40px;
+                            box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+                            transition: all .3s ease;
+                            -webkit-transition: all .3s ease;
+                            -moz-transition: all .3s ease;
+                            -o-transition: all .3s ease;
+                            -ms-transition: all .3s ease;
+
+                            a{
+                                line-height: normal;
+                            }
+
+                            a.back_btn{
+                                display: none;
+                            }
+
+                            .tab_header_links{
+                                ul{
+                                    li{
+                                        display: block;
+                                        margin-bottom: 20px;
+                                        cursor: pointer;
+                                        min-height: auto;
+                                        margin-left: 0;
+            
+                                        &:last-child{
+                                            margin-bottom: 0;
+                                        }
+            
+                                        a{
+                                            position: relative;
+                                            display: block;
+                                            line-height: normal;
+                                            padding: 0;
+                                            font-size: 14px;
+                                            line-height: normal;
+
+                                            &::after{
+                                                display: none;
+                                            }
+
+                                            &::before{
+                                                content: "";
+                                                position: absolute;
+                                                border-top: 4px solid transparent;
+                                                border-left: 4px solid #39383ACC;
+                                                border-bottom: 4px solid transparent;
+                                                margin-left: 8px;
+                                                top: 4px;
+                                                margin: auto;
+                                                right: 0;
+                                                transition: all 0.3s ease;
+                                            }
+
+                                            &:hover::before{
+                                                border-left: 4px solid $primaryColor;
+                                            }
+                                        }
+                                    }
+                                }
+            
+                                button{
+                                    padding: 8px 20px;
+                                    font-size: 14px;
+                                    margin-bottom: 15px;
+                                    transition: all 0.3s ease;
+                                    -webkit-transition: all 0.3s ease;
+                                    -moz-transition: all 0.3s ease;
+                                    -o-transition: all 0.3s ease;
+                                    -ms-transition: all 0.3s ease;
+                                }
+                            }
+                        }
+
+                        &:first-child{
+                            margin-left: 0;
+                        }
+
+                        a{
+                            text-transform: uppercase;
+                            line-height: 90px;
+                            font-size: 14px;
+
+                            @media only screen and (min-width: 767px){
+                                &::after{
+                                    content: "";
+                                    display: inline-block;
+                                    border-left: 4px solid transparent;
+                                    border-right: 4px solid transparent;
+                                    border-top: 4px solid #39383ACC;
+                                    margin-left: 8px;
+                                    transform: translateY(-3px);
+                                    transition: all 0.3s ease;
+                                }
+                            }
+                        }
+
+                        @media only screen and (min-width: 767px){
+                            &:hover{
+                                .dropdown_nav{
+                                    opacity:1;
+                                    visibility: visible;
+                                }
+
+                                a:after{
+                                    border-top: 4px solid $primaryColor;
+                                    transform: rotate(180deg) translateY(2px);
+                                }
+                            }
+                        }
+                    }
+                    
+                    .tabContent{
+                        div{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .signup_search{
+            width: 15%;
+            text-align: right;
+
+            ul{
+                li{
+                    display: inline-block;
+                    margin-left: 30px;
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

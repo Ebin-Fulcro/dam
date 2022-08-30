@@ -1,0 +1,128 @@
+$condensedFont: 'Roboto Condensed', sans-serif;
+$primaryColor: #00ADEE;
+
+.plan_option_main{
+    font-family: $condensedFont;
+    text-align: left;
+
+    h2,
+    h5{
+        font-family: $condensedFont;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .plan_option_slider{
+        margin-top: 40px;
+
+        .swiper-slide{
+            height: auto;
+
+            &.swiper-slide-next{
+                border-right: 2px solid #d6d6d6;
+                border-left: 2px solid #d6d6d6;
+            }
+        }
+
+        .plan_box{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 50px 40px;
+            height: 100%;
+
+            h5{
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 30px;
+                padding-right: 40px;
+            }
+
+            .list{
+                margin-bottom: 30px;
+            }
+
+            a{
+                border-color: $primaryColor;
+                background: transparent;
+
+                &:hover{
+                    background: $primaryColor;
+                    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 961px){
+
+    .plan_option_main{
+        .plan_option_slider{
+            .swiper-slide{
+                &.swiper-slide-next{
+                    border-right: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+
+    .plan_option_main{
+        padding-bottom: 10%;
+    
+        p{
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    
+        .plan_option_slider{
+            margin-top: 20px;
+    
+            .swiper-slide{
+                opacity: 0.3;
+                height: auto;
+
+                &.swiper-slide-active{
+                    opacity: 1;
+                }
+    
+                &.swiper-slide-next{
+                    border: 0;
+                }
+            }
+
+            .swiper-pagination{
+                text-align: center;
+                margin-top: 15px;
+
+                .swiper-pagination-bullet{
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: #ddd;
+                    margin: 0 5px;
+
+                    &.swiper-pagination-bullet-active{
+                        background: $primaryColor;
+                    }
+                }
+            }
+    
+            .plan_box{
+                background: #fff;
+                padding: 30px;
+                border-radius: 30px;
+            }
+        }
+    }
+
+}

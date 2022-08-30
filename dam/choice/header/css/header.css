@@ -1,0 +1,162 @@
+header {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+}
+header .top_header {
+  background: #f6f6f6;
+  padding: 10px 0;
+  font-weight: 300;
+}
+header .top_header .call_mail a {
+  color: #666666;
+}
+header .top_header .call_mail a img {
+  width: 15px;
+  margin-right: 10px;
+}
+header .top_header .call_mail a:hover {
+  color: #00ADEE;
+}
+header .top_header .call_mail span {
+  display: inline-block;
+  color: #ECECEC;
+  margin: 0 10px;
+}
+header .top_header .top_header_links span {
+  display: inline-block;
+  margin: 0 10px;
+}
+header .main_header {
+  position: relative;
+}
+header .main_header .logo {
+  width: 20%;
+}
+header .main_header .logo a img {
+  width: 180px;
+}
+header .main_header .navigation {
+  width: 65%;
+}
+header .main_header .navigation nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  min-height: 90px;
+}
+header .main_header .navigation nav ul li .dropdown_nav {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #fafafa;
+  top: 100%;
+  z-index: 9999;
+  padding: 40px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+header .main_header .navigation nav ul li .dropdown_nav a {
+  line-height: normal;
+}
+header .main_header .navigation nav ul li .dropdown_nav a.back_btn {
+  display: none;
+}
+header .main_header .navigation nav ul li .dropdown_nav .tab_header_links ul li {
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+  min-height: auto;
+  margin-left: 0;
+}
+header .main_header .navigation nav ul li .dropdown_nav .tab_header_links ul li:last-child {
+  margin-bottom: 0;
+}
+header .main_header .navigation nav ul li .dropdown_nav .tab_header_links ul li a {
+  position: relative;
+  display: block;
+  line-height: normal;
+  padding: 0;
+  font-size: 14px;
+  line-height: normal;
+}
+header .main_header .navigation nav ul li .dropdown_nav .tab_header_links ul li a::after {
+  display: none;
+}
+header .main_header .navigation nav ul li .dropdown_nav .tab_header_links ul li a::before {
+  content: "";
+  position: absolute;
+  border-top: 4px solid transparent;
+  border-left: 4px solid rgba(57, 56, 58, 0.8);
+  border-bottom: 4px solid transparent;
+  margin-left: 8px;
+  top: 4px;
+  margin: auto;
+  right: 0;
+  transition: all 0.3s ease;
+}
+header .main_header .navigation nav ul li .dropdown_nav .tab_header_links ul li a:hover::before {
+  border-left: 4px solid #00ADEE;
+}
+header .main_header .navigation nav ul li .dropdown_nav .tab_header_links button {
+  padding: 8px 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+header .main_header .navigation nav ul li:first-child {
+  margin-left: 0;
+}
+header .main_header .navigation nav ul li a {
+  text-transform: uppercase;
+  line-height: 90px;
+  font-size: 14px;
+}
+@media only screen and (min-width: 767px) {
+  header .main_header .navigation nav ul li a::after {
+    content: "";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid rgba(57, 56, 58, 0.8);
+    margin-left: 8px;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (min-width: 767px) {
+  header .main_header .navigation nav ul li:hover .dropdown_nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  header .main_header .navigation nav ul li:hover a:after {
+    border-top: 4px solid #00ADEE;
+    transform: rotate(180deg) translateY(2px);
+  }
+}
+header .main_header .navigation nav ul .tabContent div {
+  display: none;
+}
+header .main_header .signup_search {
+  width: 15%;
+  text-align: right;
+}
+header .main_header .signup_search ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+header .main_header .signup_search ul li:first-child {
+  margin-left: 0;
+}/*# sourceMappingURL=header.css.map */

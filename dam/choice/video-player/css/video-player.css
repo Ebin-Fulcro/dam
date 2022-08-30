@@ -1,0 +1,45 @@
+.video_player {
+  position: relative;
+  padding: 5% 0;
+}
+.video_player .laptop {
+  width: 80%;
+  margin: auto;
+}
+.video_player .play_icon {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  width: 80px;
+  margin: auto;
+}
+.video_player .play_icon a {
+  transform: scale(1);
+}
+.video_player .play_icon a:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+.video_player .modal .btn-close {
+  position: absolute;
+  z-index: 99;
+  top: -40px;
+  right: 0;
+  background: none;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.video_player .modal .btn-close:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 767px) {
+  .video_player {
+    padding: 10% 0;
+  }
+  .video_player .play_icon {
+    top: 28%;
+    width: 50px;
+  }
+}/*# sourceMappingURL=video-player.css.map */

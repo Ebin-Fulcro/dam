@@ -1,0 +1,95 @@
+.plan_option_main {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: left;
+}
+.plan_option_main h2,
+.plan_option_main h5 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.plan_option_main p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+.plan_option_main .plan_option_slider {
+  margin-top: 40px;
+}
+.plan_option_main .plan_option_slider .swiper-slide {
+  height: auto;
+}
+.plan_option_main .plan_option_slider .swiper-slide.swiper-slide-next {
+  border-right: 2px solid #d6d6d6;
+  border-left: 2px solid #d6d6d6;
+}
+.plan_option_main .plan_option_slider .plan_box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 40px;
+  height: 100%;
+}
+.plan_option_main .plan_option_slider .plan_box h5 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-right: 40px;
+}
+.plan_option_main .plan_option_slider .plan_box .list {
+  margin-bottom: 30px;
+}
+.plan_option_main .plan_option_slider .plan_box a {
+  border-color: #00ADEE;
+  background: transparent;
+}
+.plan_option_main .plan_option_slider .plan_box a:hover {
+  background: #00ADEE;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 961px) {
+  .plan_option_main .plan_option_slider .swiper-slide.swiper-slide-next {
+    border-right: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .plan_option_main {
+    padding-bottom: 10%;
+  }
+  .plan_option_main p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .plan_option_main .plan_option_slider {
+    margin-top: 20px;
+  }
+  .plan_option_main .plan_option_slider .swiper-slide {
+    opacity: 0.3;
+    height: auto;
+  }
+  .plan_option_main .plan_option_slider .swiper-slide.swiper-slide-active {
+    opacity: 1;
+  }
+  .plan_option_main .plan_option_slider .swiper-slide.swiper-slide-next {
+    border: 0;
+  }
+  .plan_option_main .plan_option_slider .swiper-pagination {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .plan_option_main .plan_option_slider .swiper-pagination .swiper-pagination-bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 0 5px;
+  }
+  .plan_option_main .plan_option_slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #00ADEE;
+  }
+  .plan_option_main .plan_option_slider .plan_box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 30px;
+  }
+}/*# sourceMappingURL=plan-options.css.map */

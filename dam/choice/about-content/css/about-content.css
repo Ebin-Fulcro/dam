@@ -1,0 +1,17 @@
+.about_section {
+  padding: 5% 0;
+}
+.about_section p {
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #666;
+}
+.about_section p span {
+  color: #00ADEE;
+}
+
+@media only screen and (max-width: 767px) {
+  .about_section {
+    padding: 10% 0;
+  }
+}/*# sourceMappingURL=about-content.css.map */
